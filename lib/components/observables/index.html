@@ -1,0 +1,15 @@
+<ol class="breadcrumb">
+  <li class="active">Observables</li>
+</ol>
+
+<div class="jumbotron">
+    <h4> Quick example with observables </h4>
+    <h5> You can add a string with the input and add it to the list. </h5>
+    <h5> Then the string will be automaticely duplicate and uppercase. </h5>
+</div>
+
+<div class="card card-block column">
+    this is the sentence that will be add :
+    <input type="text" [(ngModel)]="sentence" />
+    <button class="btn btn-primary" (click)="addSentenceToList();">Add sentence to the list</button>
+</div>

@@ -6,7 +6,10 @@ import {GithubUsers}        from './githubUsers/index';
 import {HttpPage}           from './http/index';
 import {DataType}           from './dataType/index';
 import {Map}                from './map/index';
-import {RouteConfig, Route, ROUTER_DIRECTIVES} from 'angular2/router';
+import {Observables}        from './observables/index';
+import {RouteConfig,
+    Route,
+    ROUTER_DIRECTIVES}      from 'angular2/router';
 
 @Component({
     selector: "app"
@@ -21,6 +24,7 @@ import {RouteConfig, Route, ROUTER_DIRECTIVES} from 'angular2/router';
     new Route({ path: '/about', component: About, name: 'About', data: { pageId: null } }),
     new Route({ path: '/http', component: HttpPage, name: 'Http' }),
     new Route({ path: '/datatype', component: DataType, name: 'DataType' }),
+    new Route({ path: '/observables', component: Observables, name: 'Observables' }),
     new Route({ path: '/github-users/...', component: GithubUsers, name: 'GithubUsers'}),
     new Route({ path: '/map', component: Map, name: 'Map'})
 ])
